@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <!--  &copy; Copyright
+    Ping. All rights reserved. -->
+    <!-- header -->
+    <header class="header">
+      <a href="#">
+        <img
+          class="header__logo"
+          src="./images/logo.svg"
+          alt="logo image which indicates name i.e. Ping"
+        />
+      </a>
+      <h1 class="header__title">
+        We are launching
+        <span class="header__titleHighlight">soon!</span>
+      </h1>
+      <p class="header__description">Subscribe and get notified</p>
+      <form class="header__form" method="post" action="#">
+        <input
+          type="email"
+          name="email"
+          autocomplete="email"
+          class="header__input"
+          aria-describedby="email-error"
+          placeholder="Enter your email"
+          required
+        />
+        <span id="email-error" class="header__input__error"></span>
+        <button class="header__button" type="submit">Notify me</button>
+      </form>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <img class="main__image"/ src="./images/illustration-dashboard.png"
+      alt="illustration-dashboard image">
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <a
+          area-label="follow frontend mentor on facebook"
+          href="#"
+          target="_blank"
+        >
+          <img class="footer__icon" src="./images/fb.svg" alt="facebook icon" />
+        </a>
+        <a
+          area-label="follow frontend mentor on twitter"
+          href="#"
+          target="_blank"
+        >
+          <img class="footer__icon" src="./images/x.svg" alt="twitter icon" />
+        </a>
+        <a
+          area-label="follow frontend mentor on instagram"
+          href="#"
+          target="_blank"
+        >
+          <img
+            class="footer__icon"
+            src="./images/insta.svg"
+            alt="instagram icon"
+          />
+        </a>
+      </div>
+      <p class="footer__copyright">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
