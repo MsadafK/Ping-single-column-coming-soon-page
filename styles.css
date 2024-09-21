@@ -36,13 +36,12 @@ body {
   background-color: var(--paleBlue);
 }
 .header__input__error {
-  display: none;
   color: var(--lightRed);
   font-size: 0.5rem;
   font-style: italic;
   position: absolute;
   top: 44%;
-  left: 2%;
+  left: 6%;
 }
 
 /* FONTS */
