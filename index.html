@@ -37,7 +37,7 @@
         <span class="header__titleHighlight">soon!</span>
       </h1>
       <p class="header__description">Subscribe and get notified</p>
-      <form class="header__form" method="post" action="#">
+      <form class="header__form" method="get" action="/">
         <input
           type="email"
           name="email"
@@ -45,9 +45,12 @@
           class="header__input"
           aria-describedby="email-error"
           placeholder="Enter your email"
-          required
         />
-        <span id="email-error" class="header__input__error"></span>
+        <span
+          id="email-error"
+          aria-live="polite"
+          class="header__input__error"
+        ></span>
         <button class="header__button" type="submit">Notify me</button>
       </form>
     </header>
@@ -60,21 +63,21 @@
     <footer class="footer">
       <div class="footer__container">
         <a
-          
+          area-label="follow frontend mentor on facebook"
           href="#"
           target="_blank"
         >
           <img class="footer__icon" src="./images/fb.svg" alt="facebook icon" />
         </a>
         <a
-          
+          area-label="follow frontend mentor on twitter"
           href="#"
           target="_blank"
         >
           <img class="footer__icon" src="./images/x.svg" alt="twitter icon" />
         </a>
         <a
-          
+          area-label="follow frontend mentor on instagram"
           href="#"
           target="_blank"
         >
