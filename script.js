@@ -3,8 +3,9 @@ const emailInput = document.querySelector(".header__input");
 const submitButton = document.querySelector(".header__button");
 const errorSpan = document.getElementById("email-error");
 
-submitButton.addEventListener("click", function (event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
+
   let hasErrors = false;
 
   if (!validateEmail()) {
@@ -20,6 +21,7 @@ submitButton.addEventListener("click", function (event) {
     })
       .then(() => {
         // After successful submission, reload the page
+        console.log("Form submitted successfully!");
         alert("Thank you for submitting the form!");
         window.location.reload();
       })
@@ -30,6 +32,8 @@ submitButton.addEventListener("click", function (event) {
 });
 
 function validateEmail() {
+  console.log("clicked");
+
   const email = emailInput.value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -48,13 +52,11 @@ function validateEmail() {
 function showError(message) {
   emailInput.setAttribute("aria-invalid", "true");
   errorSpan.textContent = message;
-  errorSpan.style.display = "block";
   emailInput.style.border = "1px solid var(--lightRed)";
 }
 
 function clearError() {
   emailInput.setAttribute("aria-invalid", "false");
   errorSpan.textContent = "";
-  errorSpan.style.display = "none";
   emailInput.style.border = "";
 }
